@@ -5,9 +5,9 @@
 .header-row {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 }
 .header-logo {
+	margin-right: 172px;
 }
 .header-nav {
 	color: #292929;
@@ -19,5 +19,44 @@
 .header-nav ul li:not(:last-child) { /*або li + li*/
 	margin-right: 70px;
 }
+.header-nav a {
+	transition: color 0.2s ease-in;
+}
+.header-nav a:hover {
+	color: #01996D;
+}
 .header-login {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+}
+.header-login > * + * {
+	margin-left: 35px;
+}
+.header-login a{
+	color: black;
+	transition: color 0.2s ease-in;
+}
+.header-login a:hover:not(:last-child) {
+	color: #01996D;
+}
+.btn, a.btn {
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 400;
+	/* height: 51px;
+	line-height: 51px; */
+	min-height: 51px;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	line-height: 1;
+	padding: 0px 50px;
+	background-color: #01996D;
+	color: #fff;
+	border-radius: 4px;
+	transition: opacity 0.2s ease-in;
+}
+.btn:hover, a.btn:hover {
+	opacity: 0.8;
 }
