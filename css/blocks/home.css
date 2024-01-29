@@ -1,7 +1,7 @@
 .home {
 	position: relative;
 	padding: 175px 0px;
-	min-height: 895px;
+	max-height: 830px;
 }
 .home-content {
 	max-width: 440px;
