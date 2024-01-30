@@ -27,6 +27,21 @@ body {
 	padding: 0 15px;
 	margin: 0 auto;
 }
+@media (max-width: 1399px) {
+	.container {
+		max-width: 100%;
+	}
+}
 .container-wide {
-	max-width: 1536px;
+	width: 1536px;
+}
+@media (max-width: 1535px) {
+.container-wide {
+	width: 100%;
+}
+}
+@media (max-width: 991px) {
+	.body {
+		font-size: 18px;
+	}
 }

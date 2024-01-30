@@ -15,7 +15,7 @@
 .product-card {
 	position: absolute;
 	left: 0px;
-	bottom: 0px;	
+	bottom: 0px;
 }
 .product-img {
 	border-radius: 18px;
@@ -31,7 +31,7 @@
 }
 .product-content-subtitle {
 	font-family: 'Georgia', serif;
-	color: #01996D;
+	color: #01996d;
 	line-height: 157%;
 	font-weight: 700;
 	font-size: 50px;
@@ -46,4 +46,54 @@
 	display: flex;
 }
 
-
+@media (max-width: 1299px) {
+	.product {
+		padding-top: 80px;
+	}
+	.product-img-wrapper {
+		flex: 1 0 auto;
+		flex-basis: 50%;
+	}
+	.product-content-subtitle {
+		line-height: 130%;
+		font-size: 40px;
+	}
+	.product-card {
+		top: 80%;
+	}
+}
+@media (max-width: 991px) {
+	.product {
+		padding-top: 40px;
+		padding-bottom: 80px;
+	}
+	.product-row {
+		flex-direction: column-revers;
+	}
+	.product-content {
+		margin-bottom: 40px;
+	}
+	.product-card {
+		position: relative;
+		z-index: 2;
+		margin-top: -10%;
+		display: flex;
+		justify-content: center;
+	}
+	.product-content-subtitle {
+		font-size: 30px;
+	}
+	.product-img-wrapper {
+		padding: 0;
+		margin: 0;
+		text-align: center;
+	}
+}
+@media (max-width: 500px) {
+	.product {
+		padding-bottom: 40px;
+	}
+	.product-card {
+		margin: -30% 15px 0;
+	}
+}
