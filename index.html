@@ -157,16 +157,28 @@
 							</div>
 						</div>
 						<div class="story-video">
-							<div class="story-video-overlay">
-								<button class="story-video-btn">
-									<img src="./img/story/play-white.svg" alt="Play" />
+							<div id="video-story-overlay" class="story-video-overlay">
+								<button id="video-story-btn" class="story-video-btn">
+									<img
+										id="video-story-btn-icon"
+										width="82"
+										height="82"
+										src="./img/story/play-white.svg"
+										alt="Play"
+									/>
 								</button>
 							</div>
-							<img
+							<!-- <img
 								class="story-video-object"
 								src="./img/story/video.jpg"
 								alt="Video"
-							/>
+							/> -->
+							<video class="story-video-object" id="video-story">
+								<source
+									src="./img/coverr-woman-opens-laptop-at-airport-9693-1080p.mp4"
+									type="video/mp4"
+								/>
+							</video>
 						</div>
 					</div>
 				</div>
