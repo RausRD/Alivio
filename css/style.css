@@ -1,5 +1,5 @@
 body {
-	font-family: "Lato", sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	font-size: 20px;
 	color: #424242;
@@ -20,7 +20,9 @@ body {
 	background: transparent;
 	font-size: 0;
 } /* робить елемент прихованим на сторінці*/
-
+.no-scroll {
+	overflow: hidden;
+}
 /* .grid  */
 .container {
 	max-width: 1400px;
@@ -36,9 +38,9 @@ body {
 	width: 1536px;
 }
 @media (max-width: 1535px) {
-.container-wide {
-	width: 100%;
-}
+	.container-wide {
+		width: 100%;
+	}
 }
 @media (max-width: 991px) {
 	.body {
